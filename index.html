@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToDo List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Yapılacaklar Listesi</h1>
+  <form id="todoForm">
+    <input type="text" id="todoText" placeholder="Yapılacak işi yazın" required>
+    <input type="date" id="todoDate" required>
+    <select id="todoResponsible" required>
+      <option value="">Sorumlu Seçin</option>
+      <option value="Levent">Levent Bey</option>
+      <option value="Burak">Burak Bey</option>
+      <option value="Ibrahim">İbrahim Bey</option>
+    </select>
+    <div id="priorityButtons">
+      <button type="button" data-priority="3" class="priorityBtn red">Çok Acil</button>
+      <button type="button" data-priority="2" class="priorityBtn pink">Orta Acil</button>
+      <button type="button" data-priority="1" class="priorityBtn gray">Az Acil</button>
+    </div>
+    <input type="hidden" id="todoPriority" required>
+    <button type="submit">Ekle</button>
+  </form>
+  <ul id="todoList"></ul>
+  <button id="showCompleted">Tamamlanan İşler</button>
+  <button id="showResponsible">Sorumlu İşler</button>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
